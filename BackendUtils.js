@@ -2791,10 +2791,11 @@ function errorControll(err, req, res, next) {
 
 async function sendShared(req, res) {
   try {
-    const filePath = path.resolve(__dirname, "bundles", "shared.bundle");
+    const filePath = path.resolve(__dirname, "shared.json");
     const data = await fs.promises.readFile(filePath);
     res.status(200).send(data);
-  } catch {
+  } catch (e) {
+    console.error("sendShared error:", e);
     res.sendStatus(500);
   }
 }
