@@ -113164,7 +113164,7 @@
       "NetworkKeepAliveTimeMatchmaking" : 15,
       "PhotonAppIdMappers" : [
          {
-            "AppId" : "5e264c69-bdbf-4510-84da-c13bbcf0d17eы",
+            "AppId" : "5e264c69-bdbf-4510-84da-c13bbcf0d17e",
             "MinVersion" : "0.45"
          }
       ],
